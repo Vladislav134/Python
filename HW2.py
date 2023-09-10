@@ -13,6 +13,7 @@ if count1 < count2:
    print(count1)
 else:
    i = 1
-   print(count2)          
+   print(count1)  
+   print(0)        
     
 
