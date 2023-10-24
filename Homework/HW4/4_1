@@ -1,0 +1,8 @@
+input('vvedite n ')
+n = int(input())
+m = int(input())
+a = {int(input()) for i in range(n)}
+b = {int(input()) for i in range(m)}
+c = a.intersection(b)
+d = sorted(c)
+print(d)
