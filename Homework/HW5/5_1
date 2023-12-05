@@ -1,0 +1,10 @@
+def step(x, a):
+    if a == 0: 
+        return 1
+    if a%2 == 0:
+        return step(x, a//2) * step(x, a//2)
+    else: 
+        return step (x, a-1)*x
+x = int(input())    
+a = int(input())
+print (step(x, a))
