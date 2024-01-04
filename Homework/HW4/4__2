@@ -1,0 +1,12 @@
+N = int(input())
+A = [int(input()) for i in range(N)]
+sbor = 0
+M = len(A)
+for i in range(1,M-1,3):
+    sbor = sbor + A[i-1] + A[i] + A[i+1]
+for i in range(1,M-3,3):
+    maks = A[i-1] + A[i] + A[i+1]
+    if  A[i+2] + A[i+3] + A[i+4] > maks:
+            maks = A[i+2] + A[i+3] + A[i+4] 
+print(sbor, maks)    
+

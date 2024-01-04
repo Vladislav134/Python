@@ -1,0 +1,20 @@
+s = input('Введите фразу: ')
+count1 = 0
+count2 = 0
+words = s.split()
+word1 = words[0]
+word2 = words[1]
+list1 = list(word1)
+list2 = list(word2)
+print(list1, list2)
+for i in list1:
+    if i == 'а':
+        count1 +=1
+for i in list2:
+    if i == 'а':
+        count2 +=1        
+print(count1, count2)
+if count1 == count2:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')

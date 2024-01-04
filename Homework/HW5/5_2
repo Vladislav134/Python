@@ -1,0 +1,6 @@
+def sum():
+    i = input("Введите число: ")
+    if i =='' or i == '0':
+        return 0
+    return int(i) + sum()
+print(sum())
