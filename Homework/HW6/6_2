@@ -1,0 +1,8 @@
+a = [int(j) for j in input("Введите элементы массива а: ").split()] 
+c = []
+mini = int(input("Введите нижнюю границу: "))
+maxi = int(input("Введите верхнюю границу: "))
+for i in range(len(a)):
+    if a[i] >= mini and a[i] <= maxi:
+        c.append(i)
+print(c)
